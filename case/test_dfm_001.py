@@ -1,9 +1,8 @@
-from youqu_dogtail import DogtailUtils
+from youqu3.dogtail import Dogtail
 class TestDfm:
 
 
     def test_dfm_001(self):
         """任务栏启动文管"""
-        location = DogtailUtils().element_center("Btn_文件管理器")
-        print(location)
+        location = Dogtail().app_element("Btn_文件管理器").click()
         assert location
