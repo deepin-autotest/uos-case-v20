@@ -1,5 +1,5 @@
-from method.dfm_assert import DfmAssert
+from method.assert_method import AssertMethod
 
 
-class BaseCase(DfmAssert):
+class BaseCase(AssertMethod):
     ...
