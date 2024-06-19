@@ -10,7 +10,7 @@ class DdeFileManagerMethod:
 
     @property
     def dfm(self):
-        return Dogtail(name="dde-file-manager")
+        return Dogtail(appname="dde-file-manager")
 
     def click_desktop_dir_in_left_view_by_attr(self):
         """点击左侧侧边栏的桌面目录"""
