@@ -2,12 +2,13 @@ from funnylog.conf import setting as log_setting
 from youqu3 import log
 from youqu3.dogtail import Dogtail
 from youqu3.mousekey import MouseKey
+from youqu3.cmd import Cmd
 
 log_setting.CLASS_NAME_ENDSWITH = "Method"
 
 
 @log
-class DdeDockMethod(MouseKey):
+class DdeDockMethod(MouseKey, Cmd):
 
     @property
     def dock(self):

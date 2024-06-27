@@ -11,4 +11,7 @@ class TestDfm(BaseCase):
         DdeDockMethod().right_click_dde_file_manager_on_dock_by_attr()
         DdeDockMethod.select_menu(1)
         sleep(2)
-        self.assert_process_status(True, "dde-file-manager")
+        self.assert_process_exist("dde-file-manager")
+
+    def teardown_method(self):
+        DdeDockMethod.kill_process("dde-file-manager")
