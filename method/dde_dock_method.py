@@ -26,4 +26,3 @@ class DdeDockMethod(Cmd):
 if __name__ == '__main__':
     DdeDockMethod().right_click_dde_file_manager_on_dock_by_attr()
     DdeDockMethod().click_open_in_right_menu_by_mk()
-
